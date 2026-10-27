@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 3</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding-top: 60px;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #f0f0f0;
+            border-bottom: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        .conteudo {
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        h1::before {
+            content: "⭐ ";
+        }
+
+        h1::after {
+            content: " ⭐";
+        }
+
+        .destaque {
+            color: #ff007f;
+        }
+
+        button {
+            padding: 8px 12px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2ecc71;
+        }
+
+        button:active {
+            transform: scale(0.9);
+        }
+
+        ol {
+            padding-left: 20px;
+            width: 200px;
+        }
+
+        ol li {
+            padding: 4px;
+        }
+
+        ol li:nth-child(odd) {
+            background-color: #cccccc;
+        }
+
+        ol li:nth-child(even) {
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <strong>Topo</strong>
+    </nav>
+
+    <div class="conteudo">
+
+        <h1 class="destaque">Título</h1>
+
+        <button>Botão</button>
+
+        <ol>
+            <li>Linha 1</li>
+            <li>Linha 2</li>
+            <li>Linha 3</li>
+            <li>Linha 4</li>
+            <li>Linha 5</li>
+            <li>Linha 6</li>
+        </ol>
+
+    </div>
+
+</body>
+</html>

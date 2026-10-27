@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Position: Fixed</title>
+  <style>
+    body {
+      height: 2000px;
+      font-family: Arial;
+      margin: 0;
+    }
+
+    .menu-fixo {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      z-index: 100;
+    }
+
+    .conteudo {
+      padding-top: 80px;
+      padding-left: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="menu-fixo">📌 Menu Fixo no Topo</div>
+
+  <div class="conteudo">
+    <h1>Conteúdo da Página</h1>
+    <p>Role a página e veja o menu fixo.</p>
+    <p>Ele não sai do lugar!</p>
+    <p>Lorem ipsum dolor sit amet...</p>
+  </div>
+</body>
+
+</html>

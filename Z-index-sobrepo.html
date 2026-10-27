@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo Z-Index</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 40px;
+            background: #f0f4f8;
+        }
+
+        /* ==========================================
+           CAIXAS QUE VÃO SE SOBREPOR
+           ========================================== */
+        .caixa {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            padding: 20px;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        /* Caixa vermelha - z-index: 1 (fica atrás) */
+        .vermelha {
+            background: #e74c3c;
+            top: 100px;
+            left: 100px;
+            z-index: 1;
+        }
+
+        /* Caixa azul - z-index: 2 (fica na frente) */
+        .azul {
+            background: #3498db;
+            top: 150px;
+            left: 150px;
+            z-index: 2;
+        }
+
+        /* Caixa verde - z-index: 3 (fica na frente de todas) */
+        .verde {
+            background: #2ecc71;
+            top: 200px;
+            left: 200px;
+            z-index: 3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🎯 Exemplo de Z-Index</h1>
+    <p>Quanto MAIOR o z-index, MAIS NA FRENTE o elemento fica.</p>
+
+    <!-- As caixas -->
+    <div class="caixa vermelha">Vermelha (z-index: 1)</div>
+    <div class="caixa azul">Azul (z-index: 2)</div>
+    <div class="caixa verde">Verde (z-index: 3)</div>
+
+</body>
+</html>

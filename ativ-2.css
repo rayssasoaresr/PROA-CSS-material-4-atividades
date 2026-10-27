@@ -1,0 +1,15 @@
+button:hover {
+    background-color: rgb(28, 237, 91);
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+li:nth-child(odd) {
+    background-color: gray;
+}
+
+input:focus {
+    border: 2px solid blue;
+}

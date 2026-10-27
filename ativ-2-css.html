@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 2</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        button {
+            display: block;
+            margin-bottom: 10px;
+            padding: 8px 12px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            cursor: pointer;
+        }
+
+        .botao-hover:hover {
+            background-color: #2ecc71;
+        }
+
+        .botao-active:active {
+            transform: scale(0.9);
+        }
+
+        .campo-texto {
+            display: block;
+            margin-bottom: 20px;
+            padding: 8px;
+            width: 250px;
+            border: 1px solid #ccc;
+            background-color: #f0f0f0;
+        }
+
+        .campo-texto:focus {
+            border-color: #3498db;
+            background-color: #ffffff;
+            outline: none;
+        }
+
+        ol {
+            padding-left: 20px;
+            width: 200px;
+        }
+
+        ol li {
+            padding: 4px;
+        }
+
+        ol li:nth-child(odd) {
+            background-color: #cccccc;
+        }
+    </style>
+</head>
+<body>
+
+    <button class="botao-hover">1 - Passe o mouse</button>
+    <button class="botao-active">2 - Clique e segure</button>
+
+    <input type="text" class="campo-texto" placeholder="4 - Input Focus (Clique aqui)">
+
+    <ol>
+        <li>Linha 1</li>
+        <li>Linha 2</li>
+        <li>Linha 3</li>
+        <li>Linha 4</li>
+        <li>Linha 5</li>
+        <li>Linha 6</li>
+        <li>Linha 7</li>
+        <li>Linha 8</li>
+        <li>Linha 9</li>
+        <li>Linha 10</li>
+    </ol>
+
+</body>
+</html>

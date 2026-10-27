@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Position: Absolute</title>
+  <style>
+    .pai {
+      position: relative;
+      /* referência */
+      width: 300px;
+      height: 200px;
+      background-color: #f0f0f0;
+      margin: 20px;
+    }
+
+    .filho {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: red;
+      color: white;
+      padding: 10px;
+    }
+
+    .filho2 {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-color: blue;
+      color: white;
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="pai">
+    <div class="filho">Canto Superior Direito</div>
+
+    <br>
+    <br>
+
+
+    <div class="filho2">Canto Inferior Esquerdo</div>
+
+    <br>
+    <br>
+
+    <p>Conteúdo da caixa pai...</p>
+  </div>
+</body>
+
+</html>

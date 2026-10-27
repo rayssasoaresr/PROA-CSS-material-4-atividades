@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Position: Sticky</title>
+   <style>
+    body {
+      height: 2000px;
+      font-family: Arial;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .cabecalho-secao {
+      position: sticky;
+      top: 0;
+      background-color: blue;
+      color: white;
+      padding: 15px;
+      margin: 20px 0;
+      z-index: 10;
+    }
+
+    .conteudo {
+      height: 300px;
+      background-color: #f0f0f0;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Página com Sticky</h1>
+
+  <div class="cabecalho-secao">📌 Seção 1 - Gruda no Topo</div>
+  <div class="conteudo">Conteúdo da seção 1...</div>
+
+  <div class="cabecalho-secao">📌 Seção 2 - Gruda no Topo</div>
+  <div class="conteudo">Conteúdo da seção 2...</div>
+
+  <div class="cabecalho-secao">📌 Seção 3 - Gruda no Topo</div>
+  <div class="conteudo">Conteúdo da seção 3...</div>
+</body>
+</html>

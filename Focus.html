@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> :active e :focus</title>
+     <style>
+    button {
+      padding: 15px 30px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    /* Quando está sendo CLICADO */
+    button:active {
+      transform: scale(0.9);
+      background-color: red;
+    }
+
+    /* Quando o input está SELECIONADO */
+    input {
+      padding: 10px;
+      font-size: 16px;
+      border: 2px solid gray;
+    }
+
+    input:focus {
+      border-color: blue;
+      outline: none;
+      box-shadow: 0 0 10px rgba(0,0,255,0.3);
+    }
+  </style>
+</head>
+<body>
+  <h2>Active (clique no botão)</h2>
+  <button>Clique aqui</button>
+
+  <h2>Focus (clique no campo)</h2>
+  <input type="text" placeholder="Digite algo...">
+</body>
+</html>
